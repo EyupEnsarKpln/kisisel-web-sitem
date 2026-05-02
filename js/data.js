@@ -71,7 +71,7 @@ const portfolioData = {
         {
             id: "img-3",
             type: "image",
-            title: "4k makro çekim, Yapay Zeka ile üretilmiş MAKRO ÇEKİM.",
+            title: "Yağmurlu bir günde araba içi bir stil.",
             url: "https://i.ibb.co/PG9xS8NK/Gemini-Generated-mage-7ili947ili947ili.png", // Instagram linki → otomatik embed
             prompt: "Wong Kar-wai Style Cinematic Portrait A photorealistic, cinematic portrait in the style of Wong Kar-wai, using the uploaded image as a face reference. Emphasize the jawline and neck to be sharp, almost sculptural, while maintaining the original facial features and identity. Pose: Sitting, head leaning against the window, hands resting on the edge, eyes gazing wistfully at the streetlights. Setting: Inside an old taxi with faded leather seats. The window is fogged with rain, and streetlights are streak blurred in the background. Camera Angle: Shot from outside the window, with reflections layered over the face. Lighting: Red-green neon lights streaking across, causing the face to change color with the passing light. Attire: A slightly unbuttoned black shirt, wet hair. Image Tone: High red-green contrast, heavy film grain, pronounced motion blur, a soft glow around car lights. Mood: Lonely, isolated, a silent big city.",
             description: "4K kalite de üretilmiş makro çekim çalışması."
