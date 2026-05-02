@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyüp Ensar Kaplan | AI & Kod Portfolyosu</title>
+    <meta name="description" content="Eyüp Ensar Kaplan - AI ile üretilen sanat eserleri ve kod projeleri portfolyosu.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background Orbs -->
+    <div class="galaxy-spiral"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-noise"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-logo">EEK</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-section="home">Evren</a></li>
+            <li><a href="#gallery" data-section="gallery">Galeri</a></li>
+            <li><a href="#projects" data-section="projects">Projeler</a></li>
+            <li><a href="#contact" data-section="contact">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active-section">
+            <div class="hero-content">
+                <h1 id="hero-title" class="glitch" data-text="Eyüp Ensar Kaplan">Eyüp Ensar Kaplan</h1>
+                <p id="hero-subtitle" class="subtitle">Yapay zeka ile sanatın sınırlarını zorluyorum.</p>
+                <p id="hero-tag" class="hero-tag">✦ AI ARTIST &amp; DEVELOPER</p>
+                <div class="hero-line"></div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Keşfet</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="section-header">
+                <h2>Dijital <span>Tuval</span></h2>
+                <p>Yapay zeka ile üretilmiş görsel ve işitsel eserler.</p>
+            </div>
+            <div id="gallery-grid" class="masonry-grid">
+                <!-- Gallery items injected via JS -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>Kod <span>Laboratuvarı</span></h2>
+                <p>Geliştirilen açık kaynak ve özel projeler.</p>
+            </div>
+            <div id="projects-grid" class="projects-container">
+                <!-- Project items injected via JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-container glass-panel">
+                <h2>Bağlantı <span>Kur</span></h2>
+                <p>Yeni bir fikir mi var? Yoksa sadece merhaba mı demek istiyorsun?</p>
+                <div class="social-links" id="social-links">
+                    <!-- Social icons injected via JS -->
+                </div>
+                <a href="#" id="contact-email" class="cyber-button">
+                    E-posta Gönder
+                    <span class="btn-glitch"></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Media -->
+    <div id="media-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <button id="modal-prev" class="modal-nav-btn" style="display:none;">&#10094;</button>
+        <div class="modal-content" id="modal-content"></div>
+        <button id="modal-next" class="modal-nav-btn" style="display:none;">&#10095;</button>
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
+
+    <!-- Custom Context Menu -->
+    <div id="cyber-context-menu" class="cyber-context-menu">
+        <div class="context-item" id="ctx-copy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Kopyala
+        </div>
+        <div class="context-item" id="ctx-hack">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Sistemi Hackle
+        </div>
+        <div class="context-item" id="ctx-mail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            İletişime Geç
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
