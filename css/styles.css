@@ -1072,11 +1072,13 @@ h1.glitch::after {
 .social-icon.youtube::before { background: #FF0000; }
 .social-icon.discord::before { background: #5865F2; }
 .social-icon.linkedin::before { background: #0077b5; }
+.social-icon.huggingface::before { background: #FFD21E; }
 
 .social-icon.instagram:hover { box-shadow: 0 0 20px rgba(220, 39, 67, 0.5); border-color: transparent; }
 .social-icon.youtube:hover { box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); border-color: transparent; }
 .social-icon.discord:hover { box-shadow: 0 0 20px rgba(88, 101, 242, 0.5); border-color: transparent; }
 .social-icon.linkedin:hover { box-shadow: 0 0 20px rgba(0, 119, 181, 0.5); border-color: transparent; }
+.social-icon.huggingface:hover { box-shadow: 0 0 20px rgba(255, 210, 30, 0.5); border-color: transparent; }
 
 /* Social Particles */
 .social-particle {

@@ -8,7 +8,8 @@ const portfolioData = {
             instagram: "https://instagram.com/",
             youtube: "https://www.youtube.com/@AlgoRhythmIO",
             discord: "https://discord.gg/dYTZaeM2AD",
-            linkedin: "https://www.linkedin.com/in/ey%C3%BCp-ensar-kaplan-15a398253/"
+            linkedin: "https://www.linkedin.com/in/ey%C3%BCp-ensar-kaplan-15a398253/",
+            huggingface: "https://huggingface.co/MrEyup"
         }
     },
     gallery: [
@@ -42,6 +43,65 @@ const portfolioData = {
                 }
             ]
         },
+        {
+
+            id: "album-2",
+            type: "album",
+            title: "Streamer Köşesi",
+            coverUrl: "https://i.ibb.co/NnVwKGhV/image.jpg",
+            description: "Yyaıncılara yaptığım içerikleri burada sergiliyorum.",
+            items: [
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/NnVwKGhV/image.jpg",
+                    prompt: "A clean, minimalist 2D flat vector logo on a very pale lavender, almost white background. The main central emblem features a stylized, sharp geometric mountain designed to look like a wide capital letter 'M'. The mountain uses two shades of purple: a solid dark royal purple for the main body, and a lighter lavender-purple highlight on the inner right slope to give a subtle geometric depth. Standing proudly atop the left peak of this 'M' mountain is a detailed, solid dark royal purple silhouette of a wolf howling upwards and towards the right. A simple, pale, semi-transparent lavender circular moon is placed directly behind the wolf's upper body and head. Centered directly below the entire mountain graphic is the text 'MALİOKTAY' in a modern, sharp, geometric sans-serif font, rendered in the exact same dark royal purple color. The letters 'A' in the text are stylized as simple triangular peaks without horizontal crossbars (resembling the lambda symbol or a mountain peak). The overall aesthetic is a professional, sharp, and modern brand identity logo.",
+                    description: "'MaliOktay' eskiden 'İsyan42' olarak bilinen yayıncının en yeni kick yayaın platformu için hazırladığım logosu"
+                },
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/NgbWvHLy/Whats-App-Gorsel-2025-12-19-saat-15-58-48-75138651.jpg",
+                    prompt: "A dramatic, cinematic portrait of a young adult man with short dark hair and a light beard, sitting at a marble-textured table in a dimly lit streaming room or studio. He is wearing a dark greenish-grey hoodie, looking downwards intensely and thoughtfully with his hands clasped together resting near his chin. Directly in front of him on the table is a mug with thick, realistic steam rising up towards his face. The background is slightly out of focus, featuring dark walls with acoustic foam panels. The room is illuminated by striking ambient lighting: a vertical red LED strip on the left side and a blue LED light source on the right, creating a moody, contrasting atmosphere. A computer monitor edge is barely visible on the far right.There are highly specific text overlays integrated into the composition:At the top, large, bold, distressed/grunge white text reads 'HAYATIN GERÇEKLERİ' spread across two lines.In the lower-middle section, placed exactly over the rising steam and the coffee mug, is the text 'İSYAN42' in a bright, glowing red neon stylized font. Very faintly visible just below 'İSYAN42' is the dark word 'COFFEE'.At the bottom center, clean, bold white text reads 'BU AKŞAM 21:00'.The overall aesthetic is a gritty, hyper-realistic, high-quality stream announcement poster.",
+                    description: "'Just Chatting' yayınları için hazırlanmış bir poster sizlerde resminizi koyarak ve prompt u kullanarak bu işi yapabilirsiniz."
+                },
+            ]
+
+        },
+        {
+            id: "album-3",
+            type: "album",
+            title: "Ürün Reklam Görselleri Revizyon Kataloğu",
+            coverUrl: "https://i.ibb.co/5gj1Ft77/1-duzeltildi.png",
+            description: "Bu albümde kötü çekilen görselleri en iyi pazarlanabilir haline getiriyorum",
+            items: [
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/zhVGshkG/1.png",
+                    prompt: "",
+                    description: "Bu görselde kötü çekilen ilk fotoğrafı diğer resimde ise en iyi halini göreceksiniz."
+                },
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/5gj1Ft77/1-duzeltildi.png",
+                    prompt: "A premium-quality, realistic photograph of the Jean Paul Gaultier Classique Eau de Toilette perfume set, placed on a highly polished, dark black marble surface with detailed white veining. On the left is the distinctive female bust-shaped glass perfume bottle, with its faceted clear glass, rich golden-amber colored liquid inside, silver-toned pump, and cap, gleaming with light. To its right stands its metallic dark grey ribbed aluminum can-packaging box. On the side of the box, the embossed text reads 'Jean Paul GAULTIER' at the top and 'CLASSIQUE' below it in stylized, clear lettering. Below 'CLASSIQUE', there is a metallic label with small, clear text, including the batch code '061||B|1J9|44'. At the bottom of the can, smaller text reads 'EAU DE TOILETTE' and a fluid measure like '100 ml e 3.4 FL OZ'. The background is composed of luxurious, rich deep-red velvet curtains with deep folds. The scene is illuminated by warm, theatrical spotlights that create a golden, shimmering atmosphere with floating bokeh light particles and lens flare. Above the bottles, centered, is the white text in a refined serif font: 'THE ICON OF FEMINININITY'. At the bottom center, in white serif text, are the lines: 'UNVEIL YOUR TRUE ESSENCE', followed below by the white text 'Available Now' in a simpler sans-serif font. The composition is balanced and elegant.",
+                    description: "Bu görselde kötü çekilen ilk fotoğrafın reklam görseli için uygun halini göreceksiniz."
+                },
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/HTRLwHjj/3.png",
+                    prompt: "",
+                    description: "Bu görselde kötü çekilen ikinci fotoğrafı göreceksiniz, diğer görselde ise düzenlenmiş hali mevcuttur."
+                },
+                {
+                    type: "image",
+                    url: "https://i.ibb.co/DgvtcgcR/3-duzenlenmis.png",
+                    prompt: "A high-resolution, photorealistic product shot of a luxury perfume set. The scene is set on a highly polished dark marble surface with light veining, reflecting the items and the scene. Centered is a dark maroon, textured leather-grain presentation box. The box has precise gold stitching along its entire edge. A large, stylized gold 'X' logo is centered on the box. At the bottom of the box, in smaller gold text, are the words 'THE COLLECTION'. Standing next to the box on the right is a stunningly crafted perfume bottle. The entire bottle, except for the cap, is densely encrusted with thousands of small, brilliant purple crystals. A gold plaque with a smaller stylized 'X' logo and text that includes 'MARQUESE' is mounted on the front. The bottle is crowned with an ornate, highly polished solid gold cap shaped like a faceted royal crown or scepter top, with 'XERJOFF' subtly engraved at its base. The background is a beautifully blurred, warm-toned luxury interior, with a large, classical-style grand chandelier and architectural columns. The lighting is soft and luxurious, creating a distinct catchlight on the gold cap and brilliant sparkle in the purple crystals.",
+                    description: "Bu görselde kötü çekilen üçüncü fotoğrafın düzenlenmiş ve reklam için hazırlanmış halini göreceksiniz."
+                }
+            ]
+
+        },
+
+
         {
             id: "img-1",
             type: "image",
@@ -93,17 +153,17 @@ const portfolioData = {
         {
             id: "vid-2",
             type: "video",
-            title: "Neon Yansımalar - AI Müzik",
+            title: "'Ride On' 🤠 Dark Outlaw Country & Spaghetti Western Music | Epic Cinematic Americana (Lyric Video)",
             url: "https://youtu.be/uD2hrEIg94c", // Suno müziğini video yapıp YouTube'a yükle, linkini buraya koy
-            prompt: "synthwave, cyberpunk, energetic, dark synth, 120bpm, female vocals",
-            description: "Suno AI kullanarak ürettiğim synthwave tarzında cyberpunk temalı müzik parçası."
+            prompt: "",
+            description: "'Ride On' 🤠 Dark Outlaw Country & Spaghetti Western Music | Epic Cinematic Americana (Lyric Video)"
         },
         {
             id: "vid-3",
             type: "video",
             title: "Le Poids d’une Promesse – Une Chanson d’Amour et de Sacrifice 🎶❤️",
             url: "https://youtu.be/HIAAFWoHC8g",
-            prompt: "ff",
+            prompt: "",
             description: "This song captures the essence of love’s struggles, raw emotions, and universal dilemmas."
         }
     ],
