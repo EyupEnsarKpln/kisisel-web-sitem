@@ -188,12 +188,12 @@ const portfolioData = {
         },
         {
             id: "proj-2",
-            title: "Auto-UI Builder",
-            tech: ["JavaScript", "HTML5", "CSS3"],
-            link: "https://example.com",
-            previewUrl: "https://example.com",
-            screenshot: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80",
-            description: "Metin komutlarını kullanarak anında kullanıcı arayüzleri oluşturan deneysel bir web aracı."
+            title: "Shine Lounge",
+            tech: ["JS", "HTML", "CSS"],
+            link: "https://eyupensarkpln.github.io/shine-lounge/",
+            previewUrl: "https://eyupensarkpln.github.io/shine-lounge/",
+            screenshot: "https://res.cloudinary.com/dvlzvmawt/image/upload/q_auto/f_auto/v1781874000/FireShot_Capture_021_-_Shine_Kafe_Lounge_-_eyupensarkpln.github.io_jdpr4f.png",
+            description: "Shine Lounge için hazırladığım pre-relase sürümü web sitesi."
         },
         {
             id: "proj-3",
