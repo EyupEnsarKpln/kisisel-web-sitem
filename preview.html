@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proje Ön İzleme | Eyüp Ensar Kaplan</title>
+    <meta name="description" content="Eyüp Ensar Kaplan - Web projeleri için canlı ön izleme ve responsive test alanı.">
+
+    <!-- Security Headers (Reduced restriction slightly to allow loading iframes of previewed sites if they permit it, but fallback message will display if blocked) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; frame-src *;">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="overflow: hidden;">
+    <!-- Page Transition Shutter -->
+    <div class="page-shutter active" id="page-shutter"></div>
+
+    <!-- Particle Background (Only for outer frames) -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background Orbs -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-noise"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preview Container Structure -->
+    <div class="preview-container-page" id="preview-container">
+        <!-- Top bar controls -->
+        <header class="preview-header glass-panel">
+            <div class="preview-header-left">
+                <a href="projects.html" class="back-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    Projeler
+                </a>
+                <div class="preview-meta">
+                    <h2 id="preview-title">Yükleniyor...</h2>
+                    <div id="preview-tech" class="project-tech-tags"></div>
+                </div>
+            </div>
+            
+            <div class="preview-header-center">
+                <button class="device-btn active" data-device="desktop" title="Masaüstü Görünümü">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </button>
+                <button class="device-btn" data-device="tablet" title="Tablet Görünümü">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </button>
+                <button class="device-btn" data-device="mobile" title="Mobil Görünümü">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                </button>
+            </div>
+            
+            <div class="preview-header-right">
+                <a href="#" target="_blank" rel="noopener noreferrer" id="preview-direct-link" class="cyber-button-mini">
+                    Sitede Aç
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+            </div>
+        </header>
+
+        <!-- Workspace (Details Sidebar & Device preview screen) -->
+        <div class="preview-workspace">
+            <aside class="preview-sidebar glass-panel">
+                <h3>Proje Detayları</h3>
+                <p id="preview-desc">Yükleniyor...</p>
+                <div class="preview-info-box">
+                    <div class="info-item">
+                        <span class="info-label">Geliştirici:</span>
+                        <span class="info-value">Eyüp Ensar Kaplan</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Durum:</span>
+                        <span class="info-value accent-cyan">Aktif / Canlı</span>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="iframe-container-wrapper">
+                <div class="iframe-wrapper desktop" id="iframe-wrapper">
+                    <!-- The dynamic site will be loaded here -->
+                    <iframe id="preview-iframe" src="about:blank"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Context Menu -->
+    <div id="cyber-context-menu" class="cyber-context-menu">
+        <div class="context-item" id="ctx-copy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Kopyala
+        </div>
+        <div class="context-item" id="ctx-hack">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            Sistemi Hackle
+        </div>
+        <div class="context-item" id="ctx-mail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            İletişime Geç
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

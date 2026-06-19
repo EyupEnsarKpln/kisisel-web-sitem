@@ -9,11 +9,13 @@ canvas.style.zIndex = '-1';
 canvas.style.pointerEvents = 'none';
 
 let particles = [];
-const PARTICLE_COUNT = 80;
-const CONNECTION_DISTANCE = 150;
-
 let stars = [];
-const STAR_COUNT = 250;
+
+// Responsive counts for performance boost
+const isMobile = window.innerWidth < 768;
+const PARTICLE_COUNT = isMobile ? 30 : 80;
+const STAR_COUNT = isMobile ? 120 : 250;
+const CONNECTION_DISTANCE = isMobile ? 90 : 150;
 
 function resize() {
     canvas.width = window.innerWidth;
@@ -90,16 +92,21 @@ class Particle {
     }
     draw() {
         const fade = Math.sin((this.life / this.maxLife) * Math.PI);
+        const currentOpacity = this.opacity * fade;
+        
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fillStyle = this.color;
-        ctx.globalAlpha = this.opacity * fade;
+        ctx.globalAlpha = currentOpacity;
         ctx.fill();
-        // Glow effect
-        ctx.shadowBlur = 8;
-        ctx.shadowColor = this.color;
+        
+        // Performance-friendly Glow Effect: Draw a larger faint circle instead of using shadowBlur (which runs on CPU rasterizer)
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size * 4, 0, Math.PI * 2);
+        ctx.fillStyle = this.color;
+        ctx.globalAlpha = currentOpacity * 0.18; // Very faint glow
         ctx.fill();
-        ctx.shadowBlur = 0;
+        
         ctx.globalAlpha = 1;
     }
 }

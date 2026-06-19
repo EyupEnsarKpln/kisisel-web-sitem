@@ -19,7 +19,7 @@ const portfolioData = {
         {
             id: "album-1",
             type: "album",
-            title: "Mustafa Kemal Ataürk köşesi.  ",
+            title: "Mustafa Kemal Ataürk Köşesi",
             coverUrl: "https://i.ibb.co/p667svPd/Gemini-Generated-mage-m182qzm182qzm182.png",
             description: "Google gemini (nano banana) kullanarak hazırladığım çalışmanın adımları. (Albüm Mantığı)",
             items: [
@@ -131,10 +131,19 @@ const portfolioData = {
         {
             id: "img-3",
             type: "image",
-            title: "Yağmurlu bir günde araba içi bir stil.",
+            title: "Yağmurlu bir günde araba içi bir stil",
             url: "https://i.ibb.co/PG9xS8NK/Gemini-Generated-mage-7ili947ili947ili.png", // Instagram linki → otomatik embed
             prompt: "Wong Kar-wai Style Cinematic Portrait A photorealistic, cinematic portrait in the style of Wong Kar-wai, using the uploaded image as a face reference. Emphasize the jawline and neck to be sharp, almost sculptural, while maintaining the original facial features and identity. Pose: Sitting, head leaning against the window, hands resting on the edge, eyes gazing wistfully at the streetlights. Setting: Inside an old taxi with faded leather seats. The window is fogged with rain, and streetlights are streak blurred in the background. Camera Angle: Shot from outside the window, with reflections layered over the face. Lighting: Red-green neon lights streaking across, causing the face to change color with the passing light. Attire: A slightly unbuttoned black shirt, wet hair. Image Tone: High red-green contrast, heavy film grain, pronounced motion blur, a soft glow around car lights. Mood: Lonely, isolated, a silent big city.",
             description: "4K kalite de üretilmiş makro çekim çalışması."
+        },
+
+        {
+            id: "img-4",
+            type: "image",
+            title: "Janti Giyim için Örnek :D",
+            url: "https://i.ibb.co/dS03vxQ/Chat-GPT-mage-27-May-2026-06-06-41.png",
+            prompt: "Using this image as a reference for the face and hair, generate a photo. A hyper-realistic, flash-photography style cinematic shot of a 20-year-old man with a lean, muscular build and a sharp, smooth jawline. He has a confident expression, looking thoughtfully to the side. He is sitting casually on a plush red carpeted staircase inside a luxury Art Deco building. He is wearing a dark emerald green velvet suit with a rich sheen, a white shirt unbuttoned at the collar (no tie), polished black leather shoes, black socks, and visible gold jewelry (ring, bracelet, chain). The lighting should mimic high-end fashion editorial flash photography: bright light on the face and upper body creating sharp, stylish shadows behind him against deep red and black walls with gold trim. The texture should be crisp and DSLR-quality, with absolutely no plastic or artificial smoothness.",
+            Description: "Kendinize Bir takım elbise giydirmek isterseniz veya resmi kurumlarda illa bir görsel istenirse kullanmak için bu prompt u alabilirsiniz veya instagrama post içinde kullanılabilir, kullanırken referans olarak yüzünüzün temiz gözüktüğü bir fotoğraf ile yapınız."
         },
 
         // --- VİDEOLAR ---
@@ -170,19 +179,33 @@ const portfolioData = {
     projects: [
         {
             id: "proj-1",
-            title: "Neural Synth",
-            tech: ["Python", "TensorFlow", "React"],
-            link: "#",
-            description: "Ses dalgalarını analiz ederek görsel bir şölene dönüştüren açık kaynaklı yapay zeka projesi."
+            title: "Topaloğlu Yapı & Tadilat",
+            tech: ["JS", "CSS", "HTML"],
+            link: "https://eyupensarkpln.github.io/Topalogluinsaat_web_site/index.html",
+            previewUrl: "https://eyupensarkpln.github.io/Topalogluinsaat_web_site/index.html",
+            screenshot: "https://res.cloudinary.com/dvlzvmawt/image/upload/q_auto/f_auto/v1781360047/FireShot_Capture_010_-_Topalo%C4%9Flu_Yap%C4%B1_-_%C4%B0n%C5%9Faat_ve_Tadilat_Hizmetleri_-_eyupensarkpln.github.io_zb8p2p.png",
+            description: "Topaloğlu Yapı & tadilat için hazırladığım web sitesi"
         },
         {
             id: "proj-2",
             title: "Auto-UI Builder",
             tech: ["JavaScript", "HTML5", "CSS3"],
-            link: "#",
+            link: "https://example.com",
+            previewUrl: "https://example.com",
+            screenshot: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&auto=format&fit=crop&q=80",
             description: "Metin komutlarını kullanarak anında kullanıcı arayüzleri oluşturan deneysel bir web aracı."
+        },
+        {
+            id: "proj-3",
+            title: "Cyber Art Engine",
+            tech: ["WebGL", "Three.js", "Node.js"],
+            link: "https://html.spec.whatwg.org",
+            previewUrl: "https://html.spec.whatwg.org",
+            screenshot: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=800&auto=format&fit=crop&q=80",
+            description: "Tarayıcı üzerinde gerçek zamanlı 3D shader fraktalleri üreten yaratıcı kodlama stüdyosu."
         }
     ]
 };
 
 // Bu dosyayı bir CMS gibi kullanabilirsiniz. İçeriği değiştirmek için buradaki değerleri güncelleyin.
+// https://eyupensarkpln.github.io/kisisel-web-sitem/  ---Web Sitesi Linki---  adresine giderek bu verilerin nasıl göründüğünü görebilirsiniz.

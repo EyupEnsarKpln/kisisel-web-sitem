@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyüp Ensar Kaplan | AI & Kod Portfolyosu</title>
-    <meta name="description" content="Eyüp Ensar Kaplan - AI ile üretilen sanat eserleri ve kod projeleri portfolyosu.">
+    <title>Galeri | Eyüp Ensar Kaplan</title>
+    <meta name="description" content="Eyüp Ensar Kaplan - Yapay zeka ile üretilmiş görsel ve işitsel dijital sanat galerisi.">
 
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https://www.youtube.com https://suno.com https://www.instagram.com https://instagram.com;">
@@ -44,8 +44,8 @@
     <nav class="glass-nav">
         <a href="index.html" class="nav-logo">EEK</a>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Evren</a></li>
-            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="index.html">Evren</a></li>
+            <li><a href="gallery.html" class="active">Galeri</a></li>
             <li><a href="projects.html">Projeler</a></li>
             <li><a href="contact.html">İletişim</a></li>
         </ul>
@@ -53,20 +53,26 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Home Section -->
-        <section id="home" class="section active-section">
-            <div class="hero-content">
-                <h1 id="hero-title" class="glitch" data-text="Eyüp Ensar Kaplan">Eyüp Ensar Kaplan</h1>
-                <p id="hero-subtitle" class="subtitle">Yapay zeka ile sanatın sınırlarını zorluyorum.</p>
-                <p id="hero-tag" class="hero-tag">✦ AI ARTIST &amp; DEVELOPER</p>
-                <div class="hero-line"></div>
+        <!-- Gallery Section -->
+        <section id="gallery" class="section active-section">
+            <div class="section-header">
+                <h2>Dijital <span>Tuval</span></h2>
+                <p>Yapay zeka ile üretilmiş görsel ve işitsel eserler.</p>
             </div>
-            <a href="gallery.html" class="scroll-indicator">
-                <span>Keşfet</span>
-                <div class="mouse"></div>
-            </a>
+            <div id="gallery-grid" class="masonry-grid">
+                <!-- Gallery items injected via JS -->
+            </div>
         </section>
     </main>
+
+    <!-- Modal for Media -->
+    <div id="media-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <button id="modal-prev" class="modal-nav-btn" style="display:none;">&#10094;</button>
+        <div class="modal-content" id="modal-content"></div>
+        <button id="modal-next" class="modal-nav-btn" style="display:none;">&#10095;</button>
+        <div class="modal-caption" id="modal-caption"></div>
+    </div>
 
     <!-- Custom Context Menu -->
     <div id="cyber-context-menu" class="cyber-context-menu">
