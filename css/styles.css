@@ -1658,3 +1658,60 @@ h1.glitch::after {
         display: none; /* Hide sidebar on small screens for iframe space */
     }
 }
+
+@media (max-width: 768px) {
+    .preview-header {
+        width: 95%;
+        height: auto;
+        min-height: 60px;
+        margin: 10px auto;
+        padding: 10px 15px;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .preview-header-left {
+        gap: 10px;
+        overflow: hidden;
+    }
+    .preview-meta h2 {
+        font-size: 0.95rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+    .project-tech-tags {
+        display: none; /* Hide tech tags on mobile to save space */
+    }
+    .preview-header-center {
+        display: none; /* Hide device switcher on mobile devices */
+    }
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        gap: 4px;
+    }
+    .back-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+    .cyber-button-mini {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+        gap: 4px;
+        white-space: nowrap;
+    }
+    .cyber-button-mini svg {
+        width: 12px;
+        height: 12px;
+    }
+    .iframe-container-wrapper {
+        padding: 0;
+    }
+    .iframe-wrapper {
+        border: none;
+        border-radius: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
