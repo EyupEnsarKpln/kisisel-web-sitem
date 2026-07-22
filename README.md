@@ -1,7 +1,6 @@
 # Eyüp Ensar Kaplan
 
-Personal Engineering Portfolio
-
+### Software Engineer • AI Security Researcher • Computer Science Student
 ---
 
 ## About
